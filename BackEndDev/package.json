@@ -2,9 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Full stack's first step",
-  "main": "app.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "node app.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
     "node"
@@ -15,5 +16,9 @@
     "dotenv": "^17.4.0",
     "express": "^5.2.1",
     "mongoose": "^9.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.1"
   }
 }
