@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+.hero{
+    padding: 100px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.hero-title{
+    color: blueviolet;
+}
+
+.hero-desc{
+    color: teal;
+    font-size: 1.3rem;
+}
+
+.dev{
+    color: skyblue;
+}
+
+.dsa{
+    color: brown;
+}
+
+.feature{
+    color: greenyellow;
+    font-family: sans-serif;
+    padding: 100px;
+}
+
+.feature-title{
+    font-size: 1.67rem;
+    font-weight: 350;
+    color: violet;
+    margin-bottom : 10px;
+}
+
+.feature-title-selected{
+    text-decoration: underline;
+}
+
+.feature-desc{
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 18px;
+}
+
+.feature-item{
+    padding: 20px 0;
+}
+
+.cta{
+    padding: 100px;
+    background-color: cadetblue;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.cta-desc{
+    color: white;
+}
+
+.cta-button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 12px;
+}
+
+.video{
+    text-align: center;
+    padding: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.video-title{
+    padding: 10px;
+}
+
+.video-desc{
+    padding: 10px;
+}
