@@ -1,0 +1,9 @@
+{
+    "name" : "Rahul Nishad",
+    "role" : "Full Stack + Mobile Developer",
+    "hobbies" : ["CODING", "PLAYING"],
+    "address" : {
+        "city" : "Bangalore",
+        "country" : "India"
+    }
+}

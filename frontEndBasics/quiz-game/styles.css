@@ -1,0 +1,22 @@
+/* Boiler Plate */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f5e5e6;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vh;
+    display: flex;
+}
+
+.container{
+    background-color: aqua;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3) ;
+}
