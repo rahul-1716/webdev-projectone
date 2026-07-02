@@ -1,9 +1,22 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const ShoppingList = () => {
     const [items, setItems] = useState([]);
     const [name, setName] = useState('');
     const [quantity, setQuantity] = useState('')
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        async function getData(){
+            const response = await fetch("https://jsonplaceholder.typicode.com/posts")
+            const data = await response.json();
+            if(data && data.length){
+                setData(data)
+            }
+        }
+
+        getData();
+    }, [])
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -50,6 +63,16 @@ const ShoppingList = () => {
                     </li>
                 ))
             }
+        </ul>
+
+
+        <ul>
+            {data.map((todo , index) => (
+                <section key={todo.id}>
+                <li>{todo.title}</li>
+                <li>Body--{todo.body}</li>
+                </section>
+            ))}
         </ul>
     </div>
   )
